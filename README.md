@@ -1,8 +1,6 @@
 # BuzzBridge — OOP Business & Community Directory
 
-BuzzBridge is a console-based C++ application that models a local-business discovery and promotion platform. It was developed as an Object-Oriented Programming semester project.
-
-> **Academic context:** this was a university group project. The repository preserves the recovered project source and adds build/documentation files for easier review. The original team is credited in `docs/PROJECT_HISTORY.md`.
+BuzzBridge is a console-based C++ application developed as an Object-Oriented Programming semester project. It models a local-business discovery and promotion platform.
 
 ## Features
 
@@ -10,7 +8,7 @@ BuzzBridge is a console-based C++ application that models a local-business disco
 - business categories and location-based discovery
 - products and promotional offers
 - customer ratings and written feedback
-- profile-view / promotion-click / store-visit analytics
+- profile-view, promotion-click and store-visit analytics
 - file-based persistence
 - input validation for interactive console workflows
 
@@ -26,7 +24,7 @@ BuzzBridge is a console-based C++ application that models a local-business disco
 
 ## Build
 
-With a C++17 compiler:
+Using a C++17 compiler:
 
 ```bash
 g++ -std=c++17 -Wall -Wextra -pedantic src/main.cpp -o buzzbridge
@@ -41,20 +39,21 @@ cmake --build build
 ./build/buzzbridge
 ```
 
-On Windows, the executable may be under `build/Debug/` depending on the generator.
-
 ## Repository structure
 
 ```text
-src/main.cpp              recovered project implementation
-CMakeLists.txt             portable build configuration
-docs/PROJECT_HISTORY.md    academic provenance note
+BuzzBridge-OOP/
+├── src/
+│   └── main.cpp
+├── CMakeLists.txt
+├── .gitignore
+└── README.md
 ```
 
 ## Limitations
 
-This is a coursework console application, not a production marketplace. Passwords are stored as plain text in the original design, persistence is file-based, and concurrency/security concerns were outside the project scope. Those limitations are retained/documented rather than hidden.
+This is an academic console application. It uses file-based persistence and plain-text password storage, so it is not intended for production use.
 
 ## Skills demonstrated
 
-C++ · OOP · inheritance · polymorphism · STL · file handling · input validation · console application design
+C++ · Object-Oriented Programming · inheritance · polymorphism · STL · file handling · input validation · console application design
