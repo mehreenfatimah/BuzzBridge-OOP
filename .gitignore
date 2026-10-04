@@ -1,0 +1,6 @@
+build/
+*.exe
+*.out
+*.o
+businesses.txt
+.DS_Store
